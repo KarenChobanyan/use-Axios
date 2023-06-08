@@ -17,8 +17,12 @@ export default () => {
                     <Link to ={'/posts'}>
                     <HeaderNav text={"Posts"}  />
                     </Link>
+                    <Link to={'/usersList'}>
                     <HeaderNav text={"Users"} />
-                    <HeaderNav text={"API"} />
+                    </Link>
+                    <a href="https://jsonplaceholder.typicode.com/" target="blank" className="apiButton">
+                    API
+                    </a>
                 </div>
             </div>
         </div>

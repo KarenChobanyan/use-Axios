@@ -7,6 +7,11 @@ export default ()=>{
         setHeaderNavState("Main")
     })
     return(
-        <div className="main">Main Page</div>
+        <div className="main">
+            <div className="mainTitle">Making HTTP requests with Axios</div>
+            <div className="mainImageDiv">
+                <div className="mainImage"></div>
+            </div>
+        </div>
     )
 }

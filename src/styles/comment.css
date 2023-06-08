@@ -2,7 +2,7 @@
     width: 80%;
     height: 600px;
     display: flex;
-    margin: 15px auto;
+    margin: 0px auto;
     flex-direction: column;
     overflow: visible;
     position: relative;
@@ -58,7 +58,7 @@
 }
 
 .userCommentDiv {
-    width: 300px;
+    width: 330px;
     display: flex;
     flex-direction: column;
     margin: 25px 0px 15px 15px;
@@ -96,7 +96,7 @@
 }
 
 .myEmail {
-    width: 200px;
+    width: 300px;
     height: 30px;
     font-size: 22px;
     color: rgb(12, 82, 161);

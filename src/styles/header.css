@@ -1,0 +1,97 @@
+.headerDiv {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header{
+    width: 82%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    border-bottom: 1px solid rgb(108, 213, 255);
+    z-index: 1;
+}
+
+.headerLogo{
+    width: 400px;
+    height: 60px;
+    background-image: url(../images/Axios.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.headerTitle{
+    height: 25px;
+    font-size: 15px;
+    margin-top: -10px;
+    color: rgb(151, 160, 160);
+}
+
+.headerNavDiv{
+    width: 600px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerNav{
+    width: 100px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    color: rgb(150, 151, 151);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: default;
+    transition: 0.2s;
+
+}
+
+.checkedHederNav{
+    width: 100px;
+    height: 25px;
+    border:none;
+    background: transparent;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: default;
+    transition: 0.2s;
+    color: rgb(91, 91, 252);
+}
+
+.headerNav:hover{
+    color: rgb(103, 103, 236);
+    text-decoration: underline;
+}
+
+.apiButton{
+    width: 100px;
+    height: 25px;
+    border:none;
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: default;
+    transition: 0.2s;
+    color: rgb(150, 151, 151);
+}
+
+.apiButton:hover{
+    color: rgb(103, 103, 236);
+    text-decoration: underline;
+}

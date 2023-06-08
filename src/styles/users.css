@@ -1,0 +1,177 @@
+.usersList {
+    width: 80%;
+    height: 600px;
+    overflow: visible;
+    margin: -25px auto;
+    display: flex;
+    overflow: visible;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userDiv {
+    width: 80%;
+    height: 250px;
+    box-shadow: 0px 5px 10px black;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.userAvatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-image: url(../images/ikon-avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 15px blue;
+}
+
+.userInfosheet {
+    width: 380px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.userName {
+    width: 320px;
+    height: 70px;
+    line-height: 30px;
+    font-size: 30px;
+    color: blueviolet;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.userInfo {
+    width: 380px;
+    height: 35px;
+    line-height: 25px;
+    font-size: 22px;
+    color: rgb(52, 52, 160);
+    font-family: cursive;
+    font-weight: 600;
+
+}
+
+.userSheetButtonDiv {
+    width: 100px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 80px;
+}
+
+.userInfoButton {
+    height: 35px;
+    background-color: rgb(71, 146, 196);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.userInfoButton:hover {
+    background-color: rgb(206, 208, 223);
+    color: rgb(71, 146, 196);
+}
+
+
+.userMainDiv{
+    width: 80%;
+    height: 520px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(248, 246, 246,0.9);
+     transform: translateY(-40px); 
+    box-shadow: 0px 0px 10px rgb(60, 0, 129);
+    border-radius: 10px;
+}
+
+.currnetUserFirstLne{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.userPageCloseButton {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-image: url(../images/Close-ikon.png);
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.userPageCloseButton:hover {
+    background-image: url(../images/Close-ikon-hover.png);
+}
+
+.currentUserInfoSheet{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px blue;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.currentUserMainInfo{
+    width: 700px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.currentUserOtherInfo{
+    width: 700px;
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userOtherInfoDiv{
+    width: 380px;
+    height:160px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userOtherInfoTitle{
+    height: 35px;
+    color: rgb(56, 55, 55);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.userOtherInfoText{
+    width: 320px;
+    font-family: cursive;
+    color: rgb(124, 124, 120);
+    font-size: 20px;
+    font-weight: 500;
+}

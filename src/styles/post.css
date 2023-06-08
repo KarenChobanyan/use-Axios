@@ -1,4 +1,4 @@
-.postList{
+.postList {
     width: 80%;
     height: 800px;
     display: flex;
@@ -8,7 +8,7 @@
     font-size: larger;
 }
 
-.postDiv{
+.postDiv {
     width: 100%;
     margin-top: 25px;
     display: flex;
@@ -18,18 +18,18 @@
     border-radius: 15px;
 }
 
-.postAutorName{
+.postAutorName {
     width: 100%;
     height: 35px;
     font-size: 25px;
     color: rgb(104, 2, 163);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
     text-align: center;
-    
+
 }
 
-.postTitle{
+.postTitle {
     width: 600px;
     height: 25px;
     font-size: 18px;
@@ -39,20 +39,21 @@
     font-family: monospace;
 }
 
-.post{
+.post {
     width: 900px;
     font-size: 22px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 25px;
     text-align: center;
     margin-top: 25px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     background-color: rgb(226, 226, 226);
-    box-shadow:0px 5px 20px rgba(86, 158, 252, 0.3); ;
+    box-shadow: 0px 5px 20px rgba(86, 158, 252, 0.3);
+    ;
     border-radius: 15px;
 }
 
-.postCommentDiv{
+.postCommentDiv {
     width: 100%;
     height: 35px;
     display: flex;
@@ -64,7 +65,14 @@
     color: #00b5f1;
 }
 
-.commentLogo{
+.postCommentLine {
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.commentLogo {
     width: 30px;
     height: 30px;
     background-image: url(../images/comment-ikon.png);
@@ -73,7 +81,7 @@
 }
 
 
-.textForComentLogo{
+.textForComentLogo {
     width: 130px;
     height: 30px;
     line-height: 30px;
@@ -89,11 +97,11 @@
     transition: 0.2s;
 }
 
-.textForComentLogo:hover .commentLogo {
+.postCommentLine:hover .commentLogo {
     background-image: url(../images/comment-ikon-hover.png);
 }
 
-.textForComentLogo:hover{
-   color:#84b0cc ;
+.postCommentLine:hover .textForComentLogo {
+    color: #042b7a;
+    text-decoration: underline;
 }
-
