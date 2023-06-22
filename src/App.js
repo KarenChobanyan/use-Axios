@@ -32,7 +32,7 @@ function App() {
               </Route>
               <Route path="/usersList" element={<UsersList/>}>
                 <Route path='user/:id' element={<User path={'/usersList'}/>}/>
-              </Route>
+               </Route>
             </Routes>
           </div>
         </HeaderNavContext.Provider>

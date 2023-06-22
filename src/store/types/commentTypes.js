@@ -1,0 +1,11 @@
+const GET_COMMENTS = "@ForSaga.GET_COMMENTS";
+const SET_COMMENTS = "@ComentTypes.SET_COMMENTS";
+const POST_COMMENT = "forSaga.POST_COMMENT";
+const ADD_COMMENT = "@CommentTYpes.ADD_COMMENT"
+
+export {
+    GET_COMMENTS,
+    SET_COMMENTS,
+    POST_COMMENT,
+    ADD_COMMENT
+}
