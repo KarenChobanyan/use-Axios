@@ -4,16 +4,17 @@ import UserComment from "./UserComment"
 import MyComment from "./MyComment"
 import { useDispatch, useSelector } from "react-redux"
 import { postComment } from "../store/actions/commentActions"
+import { commentsSelector } from "../store/selectors"
 
 export default () => {
-    const data = useSelector(state=>state.comments)
-    if(data.length !==0){
+    const data = useSelector(commentsSelector)
+    if (data.length !== 0) {
         const { id } = useParams()
         const comments = useSelector(state => state.comments.filter((el) => el.postId == id))
         const dispatch = useDispatch()
-        const [myComment, setMyComment] = useState(comments.filter((el)=>el.auth == "user"))
+        const [myComment, setMyComment] = useState(comments.filter((el) => el.auth == "user"))
         const commentRef = useRef()
-        
+
         // const MyCommentList = useMemo(()=>{
         //     return myComment
         // },[myComment]);
@@ -23,15 +24,15 @@ export default () => {
                 email: "karen.ysu7@mail.ru",
                 body: commentRef.current.value,
                 postId: id,
-                auth:"user"
+                auth: "user"
             }
             newComment.body && dispatch(postComment(newComment))
-            let tmp  = myComment
+            let tmp = myComment
             tmp.push(newComment)
             setMyComment(tmp)
             commentRef.current.value = ""
         }, [])
-    
+
         return (
             <div className="commentMianDiv">
                 <div className="commentList">
@@ -41,7 +42,7 @@ export default () => {
                         </Link>
                     </div>
                     <div className="commentArea">
-                        {comments.length && comments.filter((el)=>el.auth !== "user").map((el, index) => <UserComment userEmail={el.email} key={el.id + index} comment={el.body} />)}
+                        {comments.length && comments.filter((el) => el.auth !== "user").map((el, index) => <UserComment userEmail={el.email} key={el.id + index} comment={el.body} />)}
                         {myComment ? myComment.map((el, index) => <MyComment myEmail={el.email} comment={el.body} key={index + el.email} />) : null}
                     </div>
                     <div className="addComentDiv">
@@ -53,5 +54,5 @@ export default () => {
             </div>
         )
     }
-    
+
 }

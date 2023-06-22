@@ -1,14 +1,14 @@
-import { useContext, useEffect, useState } from "react"
-import { API } from "../services/api"
+import { useContext, useEffect} from "react"
 import { HeaderNavContext } from "../contexts/headerNavContext"
 import Post from "./Post"
 import { Outlet } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { getPosts } from "../store/actions/postActions"
+import { postsSelector } from "../store/selectors"
 
 export default () => {
     const [headerNav, setHeaderNavState] = useContext(HeaderNavContext);
-    const posts = useSelector(state => state.posts[0]);
+    const posts = useSelector(postsSelector);
     const dispatch = useDispatch();
 
 

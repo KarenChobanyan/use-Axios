@@ -3,15 +3,16 @@ import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { getCommnets } from "../store/actions/commentActions"
 import { getUsers } from "../store/actions/userActions"
+import { commentsSelector, usersSelector } from "../store/selectors"
 
 
 
 export default (props) => {
     const { userID, title, postText, postId, } = props;
-    const [postAuthor, setPostAuthor] = useState([]);
+    const [postAuthor, setPostAuthor] = useState({});
     const [currentPostComments, setCurrentComments] = useState([]);
-    const users = useSelector(state => state.users);
-    const comments = useSelector(state => state.comments);
+    const users = useSelector(usersSelector);
+    const comments = useSelector(commentsSelector);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -20,6 +21,7 @@ export default (props) => {
         } else {
             const tmp = comments.filter((el) => el.postId == postId)
             setCurrentComments(tmp)
+
         }
     }, [comments]);
 
@@ -28,10 +30,8 @@ export default (props) => {
         if (users.length == 0) {
             dispatch(getUsers())
         } else {
-            const tmp = users.filter((el) => el.id == userID)
-            setPostAuthor(tmp)//????????????????????????????????????
-            // console.log(tmp);
-            // console.log(postAuthor);
+            const tmp = users.filter((el) => el.id == userID)[0]
+            setPostAuthor(tmp)
         }
     }, [users]);
 
